@@ -1,5 +1,5 @@
 /** Variables
-* -------------------------------------------------------------- 
+* --------------------------------------------------------------
 
 #555 = font color
 #fefefe = light font color
@@ -111,7 +111,7 @@ header,
 hgroup,
 menu,
 nav,
-section, 
+section,
 main {
   display: block;
 }
@@ -334,6 +334,17 @@ p + p {
 
 header p {
   font-size: 1.25em;
+}
+
+header img {
+  max-width: 2em;
+  border-radius: 50%;
+  margin: 0 0 0 0.25em !important;
+  vertical-align: middle;
+}
+
+header img:hover {
+  opacity: 0.75;
 }
 
 [aria-level="2"] {
@@ -893,11 +904,11 @@ div.group-bottom > * {
   vertical-align: baseline;
 }
 
-/** 
+/**
 * EXAMPLE
-* Inline styles are used to define width 
+* Inline styles are used to define width
 *(saves on spawning classes like ".three-fifths" etc)
-* Boxes are centered on vertical axis 
+* Boxes are centered on vertical axis
 ********************************************
 
 <div class="group-center group-middle">
@@ -1508,7 +1519,7 @@ pre .xml .cdata {
   height: 3em;
   background: #444;
   margin: 0 auto;
-  outline: 0.25em #444 solid; 
+  outline: 0.25em #444 solid;
 }
 
 .divider + * {
@@ -1571,11 +1582,11 @@ pre .xml .cdata {
   [role="banner"] h1 img {
     max-width: 200px;
   }
-  
+
   .big-blob {
     font-size: 0.9em;
   }
-  
+
 }
 
 @media all and (max-width: 600px) {
@@ -1648,7 +1659,7 @@ pre .xml .cdata {
   [aria-expanded] {
     min-height: 2em !important;
   }
-  
+
 }
 
 @media all and (max-width:500px) {
@@ -1660,7 +1671,7 @@ pre .xml .cdata {
   .collapsible h2 {
     font-size: 2em;
   }
-  
+
   .big-blob p {
     margin-top: 0.75em;
     line-height: 1.125;
@@ -1689,7 +1700,7 @@ pre .xml .cdata {
   html {
     font-size: 100%;
   }
-  
+
   .big-blob {
     background-size: auto 20%;
     padding-top: 22%;

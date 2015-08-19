@@ -12,6 +12,14 @@
             {{! Everything below outputs content of the post which has been published }}
             <header>
                 <h1 itemprop="headline">{{title}}</h1>
+                {{#author}}
+                    <address class="author">
+                        By <a rel="author" href="{{url}}">{{name}}</a>
+                        {{#if image}}
+                            <a rel="author" href="{{url}}"><img src="{{image}}" alt="{{name}}'s Picture"></a>
+                        {{/if}}
+                    </address>
+                {{/author}}
             </header>
             <footer>
                 <p><time itemprop="datePublished" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></p>

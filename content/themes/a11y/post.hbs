@@ -1,0 +1,27 @@
+{{!< default}}
+
+<main role="main">
+    <div>
+        <article itemtype="http://schema.org/BlogPosting" itemscope>
+
+            {{! Each post has the blog logo at the top, with a link back to the home page }}
+
+            {{! Everything inside the #post tags pulls data from the post }}
+            {{#post}}
+
+            {{! Everything below outputs content of the post which has been published }}
+            <header>
+                <h1 itemprop="headline">{{title}}</h1>
+            </header>
+            <footer>
+                <p><time itemprop="datePublished" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></p>
+                <a href="https://twitter.com/share?url={{@blog.url}}{{url}}&text={{title}}" target="_blank">Tweet!</a>
+            </footer>
+            <div itemprop="articleBody">
+                {{content}}
+            </div>
+            {{/post}}
+
+        </article>
+    </div>
+</main>

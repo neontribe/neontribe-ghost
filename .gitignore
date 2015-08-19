@@ -1,0 +1,10 @@
+node_modules
+Gruntfile.js
+LICENSE
+PRIVACY.md
+config.example.js
+core
+ghost-*
+index.js
+logs
+npm-*

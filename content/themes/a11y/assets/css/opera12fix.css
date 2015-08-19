@@ -1,0 +1,59 @@
+/*this is a fix for a rendering issue in opera 12 where odd stuff happens 
+in an element with svg background and border radius set.
+here we just load the png versions
+*/
+
+
+.blob-discovery {
+  background-image: url(images/p_discovery.png);
+}
+
+.blob-development {
+  background-image: url(images/p_development.png);
+}
+
+.blob-delivery {
+  background-image: url(images/p_delivery.png);
+}
+
+[data-subprocess="personas"] {
+  background-image: url(images/p_personas.png);
+}
+
+[data-subprocess="user-stories"] {
+  background-image: url(images/p_user-stories.png);
+}
+
+[data-subprocess="prototyping"] {
+  background-image: url(images/p_prototyping.png);
+}
+
+[data-subprocess="prioritisation"] {
+  background-image: url(images/p_prioritisation.png);
+}
+[data-subprocess="coding"] {
+  background-image: url(images/p_coding.png);
+}
+
+[data-subprocess="testing"] {
+  background-image: url(images/p_testing.png);
+}
+
+[data-subprocess="visual-design"] {
+  background-image: url(images/p_visual-design.png);
+}
+
+[data-subprocess="launch"] {
+  background-image: url(images/p_launch.png);
+}
+
+[data-subprocess="measurement"] {
+  background-image: url(images/p_measurement.png);
+}
+
+[data-subprocess="improvement"] {
+  background-image: url(images/p_improvement.png);
+}
+
+
+

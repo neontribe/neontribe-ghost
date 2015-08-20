@@ -1596,7 +1596,7 @@ pre .xml .cdata {
   }
 
   address {
-    text-align: left;
+    /*text-align: left;*/
   }
 
   .articles article {

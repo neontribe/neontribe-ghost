@@ -3,6 +3,9 @@ Gruntfile.js
 LICENSE
 PRIVACY.md
 config.example.js
+content/data
+content/apps
+content/images
 core
 ghost-*
 index.js

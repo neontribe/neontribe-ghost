@@ -1,0 +1,43 @@
+{{!< default}}
+
+<header role="banner">
+	<img src="{{asset 'img/neontribe_logo_vintage_light.svg'}}" alt="The Neontribe logo as a vintage badge">
+	<p class="intro">Neontribe is a software development company. We're agile and user-centered in our design and development work, producing websites and apps. If that sounds like what you need, email us at <a href="mailto:info@neontribe.co.uk">info@neontribe.co.uk</a>.</p>
+</header>
+<main role="main">
+	<section>
+		<div>
+			{{#post}}
+
+			<article>
+				<header>
+					<h1>{{{title}}}</h1>
+					{{#author}}
+						<address class="author">
+							By <a rel="author" href="{{url}}">{{name}}</a>
+							{{#if image}}
+								<a href="{{url}}"><img src="{{image}}" alt="{{name}}'s Picture"></a>
+							{{/if}}
+						</address>
+					{{/author}}
+				</header>
+				<div>
+					<p><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></p>
+					<a href="https://twitter.com/share?url={{@blog.url}}{{url}}&text={{title}}" target="_blank">Tweet!</a>
+				</div>
+				{{#if tags}}
+				<ul class="tags">
+					{{#foreach tags}}
+						<li>{{name}}</li>
+					{{/foreach}}
+				</ul>
+				{{/if}}
+				<div>
+					{{content}}
+				</div>
+			</article>
+
+			{{/post}}
+		</div>
+	</section>
+</main>

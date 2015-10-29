@@ -1,0 +1,57 @@
+<!doctype html>
+<!--[if IE 8]> <html lang="en-GB" class="no-js ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-GB" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>{{meta_title}}</title>
+		<meta name="description" content="{{meta_description}}">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="{{asset 'css/main.css'}}">
+		{{ghost_head}}
+	</head>
+	<body class="{{body_class}}">
+		<nav role="navigation" id="top-nav">
+			<ul class="home">
+				<li><a href="/">Neontribe</a></li>
+			</ul>
+			<ul>
+				<li><a href="/process">Process</a></li>
+				<li><a href="/people">People</a></li>
+				<li><a href="/projects">Projects</a></li>
+				<li><a href="/#hp-blog">Blog</a></li>
+			</ul>
+		</nav>
+		{{{body}}}
+		<footer>
+			<div>
+				<div>
+					<span>&copy; Neontribe 2015.</span>
+					<span>Share under <a href="http://creativecommons.org/licenses/by-nc/4.0/legalcode">Creative Commons</a>.</span>
+				</div>
+				<figure>
+					<img src="{{asset 'img/neontribe_logo_vintage.svg'}}">
+				</figure>
+				<address>
+					<span>Neontribe</span>
+					<span>21 Colegate, Norwich NR3 1BN</span>
+					<span><a href="mailto:info@neontribe.co.uk">info@neontribe.co.uk</a></span>
+					<span><a href="tel:08456890896">0845 689 0896</a></span>
+				</address>
+            </div>
+		</footer>
+		{{ghost_foot}}
+		<script>
+			var $nav = $('nav#top-nav');
+			var threshold = 40;
+			$(window).scroll(function () {
+				var scroll = $(window).scrollTop();
+				if (scroll >= threshold) {
+					$nav.addClass('alt');
+				} else {
+					$nav.removeClass('alt');
+				}
+			});
+		</script>
+	</body>
+</html>

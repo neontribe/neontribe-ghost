@@ -1,0 +1,37 @@
+{{!< default}}
+
+<header role="banner" class="homepage">
+	<img src="{{asset 'img/neontribe_logo_vintage_light.svg'}}" alt="The Neontribe logo as a vintage badge">
+	<p class="intro">Neontribe is a software development company. We're agile and user-centered in our design and development work, producing websites and apps. If that sounds like what you need, email us at <a href="mailto:info@neontribe.co.uk">info@neontribe.co.uk</a>.</p>
+</header>
+<main role="main" id="hp-blog">
+	<section>
+		<div>
+			{{#foreach posts}}
+			<article>
+				<h2><span><em>From the Blog</em></span><a href="{{url}}">{{{title}}}</a></h2>
+				<p>{{excerpt}}&hellip;</p>
+			</article>
+			{{/foreach}}
+
+			<p><a href="/page/2" role="button">More from the Blog</a></p>
+		</div>
+	</section>
+	<section>
+		<div>
+			<article>
+				<h2><span><em>Featured Project</em></span><a href="http://www.docready.org/">DocReady</a></h2>
+				<p><a href="http://www.docready.org/"><img src="{{asset 'img/screenshots/Doc-Ready.png'}}" alt="Screenshot of the Doc Ready website"></a></p>
+				<p><strong>Client:</strong> Futuregov</p>
+				<p>DocReady is a web app designed to help young people with mental health issues prepare for appointments with their doctor. As well as useful information, it provides an easy checklist builder that outputs as PDF.</p>
+			</article>
+			<article>
+				<h2><span><em>Featured Project</em></span><a href="https://app.mindofmyown.org.uk/">Mind Of My Own</a></h2>
+				<p><a href="https://app.mindofmyown.org.uk/"><img src="{{asset 'img/screenshots/Mind-Of-My-Own-App.png'}}" alt="Screenshot of the Mind Of My Own website"></a></p>
+				<p><strong>Client:</strong> Sixteen25</p>
+				<p>A web and mobile app to help young people prepare for meetings and express their views, wishes and feelings to people like their social worker, advocate or leaving care worker.</p>
+			</article>
+			<p><a href="/projects" role="button">More Projects</a></p>
+		</div>
+	</section>
+</main>

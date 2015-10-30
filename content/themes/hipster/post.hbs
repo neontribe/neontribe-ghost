@@ -12,14 +12,14 @@
 	</address>
 	{{/author}}
 	<p><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></p>
-	<p><a href="https://twitter.com/share?url={{@blog.url}}{{url}}&text={{title}}" target="_blank" role="button">Tweet</a></p>
 	{{#if tags}}
 	<ul class="tags">
 		{{#foreach tags}}
-			<li>{{name}}</li>
+			<li><a href="{{url}}" title="{{name}}" class="tag-{{id}}">{{name}}</a></li>
 		{{/foreach}}
 	</ul>
 	{{/if}}
+	<p><a href="https://twitter.com/share?url={{@blog.url}}{{url}}&text={{title}}" target="_blank" role="button">Tweet</a></p>
 </div>
 <main role="main">
 	<section>

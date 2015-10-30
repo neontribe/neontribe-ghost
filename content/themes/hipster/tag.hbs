@@ -1,0 +1,19 @@
+{{!< default}}
+
+<header role="banner" class="page">
+	<h1>Articles tagged {{tag.name}}</h1>
+</header>
+<main role="main">
+	<section>
+		<div>
+			{{#foreach posts}}
+			<article>
+				<h2><a href="{{url}}">{{{title}}}</a></h2>
+				<p>{{excerpt}}&hellip;</p>
+			</article>
+			{{/foreach}}
+
+			{{pagination}}
+		</div>
+	</section>
+</main>
